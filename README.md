@@ -17,7 +17,7 @@ Scrape release group data from the MusicBrainz website and use it to create a ne
  * Pickles the dictionary 
   
 **3. make_network.ipynb**
-* Reads artist release credit text file and converts to list of lists (Ex: [[artist,artist,num_tracks],[...]]) 
+* Reads artist release credit text file and converts to list of lists (Ex: `[[artist,artist,num_tracks],[...]]`) 
 
 
 
