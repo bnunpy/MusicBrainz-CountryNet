@@ -4,5 +4,5 @@ Scrape release group data from the MusicBrainz website and use it to create a ne
   
 ## Notebooks
 1. test_scrape_releases.ipynb
-> sdsd
+>> sdsd
 
