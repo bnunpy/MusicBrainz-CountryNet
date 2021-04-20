@@ -15,6 +15,7 @@ Scrape release group data from the MusicBrainz website and use it to create a ne
  * Pickles the dictionary 
 
 > df['listeners_lastfm'] = df['listeners_lastfm'] /df['listeners_lastfm'].abs().max()  
+
 **3. make_network.ipynb**
 * Reads artist release credit text file and converts to list of lists (Ex: [[artist,artist,num_tracks],[...]]) 
 
