@@ -19,6 +19,6 @@ Scrape release group data from the MusicBrainz website and use it to create a ne
 **3. make_network.ipynb**
 * Reads artist release credit text file and converts to list of lists (Ex: `[[artist1 ,artist2, num_tracks], [...]]`) 
 * Also reads the picked dict from previous notebook
-* **Creates a networkx Graph** by iterating over combinations (`r=2`) of artists for each release credit. Since the last element of each release credit is the number of songs in the release, makes the weight of the edge the number of songs (Defaults to dividing the number of songs in a release credit by the number of artists credited). 
+* **Creates a `networkx` Graph** by iterating over combinations (`r=2`) of artists for each release credit. Since the last element of each release credit is the number of songs in the release, makes the weight of the edge the number of songs (Defaults to dividing the number of songs in a release credit by the number of artists credited). 
   * Assigns Country, Genre Tags, and Number of Listens attributes to each node by look-up from dictionary
 * **Visualization** with `pyvis.network` at the end of this notebook.
