@@ -9,9 +9,10 @@ Scrape release group data from the MusicBrainz website and use it to create a ne
 * Writes a text file (delimiter: '<--->') to cwd with each line repesenting the artists credited for a single release (e.g., a single, EP, or full album) with the last elemet being the number of songs in the release.  
 
 **2. df_extract_node_attrs.ipynb**
-* 
+* The goal here is to get the Country, Genre Tags, and Number of Listens for each artist so that each node (artist) can be assigned these attributes in the network.
+* From the previously mentioned Dataset, we (1) deal with repeated artist names by keping only the first, (2) fill in missing mb column values with the lastfm values, (3) drop all columns except for the 
 
-
+> df['listeners_lastfm'] = df['listeners_lastfm'] /df['listeners_lastfm'].abs().max()
 **3. make_network.ipynb**
 * Reads artist release credit text file and converts to list of lists (Ex: [[artist,artist,num_tracks],[...]]) 
 
